@@ -37,7 +37,7 @@ class SiswaController extends Controller
 
         // Search
         if ($request->has('search') && $request->search != '') {
-            $query->where('nama', 'like', '%'.$request->search.'%')
+            $query->where('nama_lengkap', 'like', '%'.$request->search.'%')
                   ->orWhere('nisn', 'like', '%'.$request->search.'%');
         }
 

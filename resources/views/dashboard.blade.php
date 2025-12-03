@@ -113,9 +113,9 @@
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <select name="jurusan_id" class="form-select" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff; border-radius: 8px;">
-                                <option value="">Semua Jurusan</option>
+                                <option value="" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff;">Semua Jurusan</option>
                                 @foreach($jurusan as $j)
-                                    <option value="{{ $j->id }}" {{ request('jurusan_id') == $j->id ? 'selected' : '' }}>
+                                    <option value="{{ $j->id }}" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff; border-radius:" {{ request('jurusan_id') == $j->id ? 'selected' : '' }}>
                                         {{ $j->nama_jurusan }}
                                     </option>
                                 @endforeach
@@ -123,9 +123,9 @@
                         </div>
                         <div class="col-md-3 col-sm-12">
                             <select name="kelas_id" class="form-select" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff; border-radius: 8px;">
-                                <option value="">Semua Kelas</option>
+                                <option value="" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff;">Semua Kelas</option>
                                 @foreach($kelas as $k)
-                                    <option value="{{ $k->id }}" {{ request('kelas_id') == $k->id ? 'selected' : '' }}>
+                                    <option value="{{ $k->id }}" style="background: #2d2d2d; border: 1px solid #404040; color: #ffffff;" {{ request('kelas_id') == $k->id ? 'selected' : '' }}>
                                         {{ $k->nama_kelas }}
                                     </option>
                                 @endforeach
